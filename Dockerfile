@@ -11,4 +11,4 @@ COPY main.py .
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "echo 'Booting uvicorn on port' $PORT && exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000} --log-level info"]
+CMD ["sh", "-c", "echo 'Booting qwen2api-proxy on port' $PORT && exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000} --log-level info"]
